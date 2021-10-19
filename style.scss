@@ -124,3 +124,41 @@ body {
 		}
 	}
 }
+
+@media only screen and (max-width: 600px) {
+	.container {
+		display: flex;
+		flex-direction: column;
+
+		.card {
+			&__box-2 {
+				border-bottom-left-radius: 0;
+
+				.card__desc {
+					&--span {
+						color: $Cyan-light;
+						font-weight: 600;
+					}
+
+					&--small {
+						font-size: 17px;
+					}
+				}
+			}
+
+			&__box-3 {
+				border-bottom-left-radius: 7px;
+				height: 200px;
+
+				.card__title {
+					padding-bottom: 19px;
+				}
+
+				.card__descs {
+					font-size: 15px;
+					line-height: 0.7;
+				}
+			}
+		}
+	}
+}
